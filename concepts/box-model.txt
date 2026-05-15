@@ -1,0 +1,9 @@
+-- The CSS Box Model --
+
+    --> every element can be seen as a box
+    --> comprised of:
+        - content (height and width)
+        - border 
+        - padding (between content and border)
+        - margin (between the border and surrounding context)
+    

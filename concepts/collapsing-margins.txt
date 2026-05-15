@@ -1,0 +1,24 @@
+Margin collapsing is one of those CSS behaviors that surprises almost everyone at first.
+
+It happens when vertical margins (margin-top / margin-bottom) of block elements touch each other. 
+Instead of adding together, CSS often uses just one margin.
+
+EXAMPLE
+
+HTML
+
+<div class="box1"></div>
+<div class="box2"></div>
+
+CSS
+
+.box1 {
+  margin-bottom: 40px;
+}
+
+.box2 {
+  margin-top: 30px;
+}
+
+You might expect: 40 + 30 = 70px
+But CSS collapses them: Result = 40px (the larger margin wins)

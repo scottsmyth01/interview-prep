@@ -1,0 +1,31 @@
+A very common pattern is a container that:
+
+1. limits max width
+2. stays responsive on smaller screens
+3. stays centered horizontally
+
+CSS
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+What each line does
+* width: 100%;
+    → allows it to shrink on mobile
+* max-width: 1200px;
+    → stops growing beyond 1200px
+* margin: 0 auto;
+    → centers the block horizontally
+* padding: 0 1rem;
+    → prevents content from touching screen edges on mobile
+
+For modern apps, widths people commonly use:
+
+* 960px → content-heavy/blog
+* 1200px → dashboards 
+* 1280–1440px → wide SaaS apps
+
